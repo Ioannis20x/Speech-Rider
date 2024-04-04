@@ -1,0 +1,70 @@
+#flex {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 0;
+    align-items:center;
+    justify-content: center;
+}
+
+#Text {
+    text-align: center;
+    font-size: xx-large;
+    text-decoration:underline;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-style: italic;
+}
+
+.menuebutton{
+    background-size: cover;
+    text-align: center;
+    color: whitesmoke;
+    font-size: x-large;
+    text-decoration: underline;
+
+}
+
+#Soundboardbutton {  
+    height: 100px;
+    width: 220px;
+    background-image:url("../img/images.jfif");
+    color: whitesmoke;
+}
+
+#faqbutton {
+    text-align: center;
+    color: whitesmoke;
+    font-size: x-large;
+    height: 100px;
+    width: 220px;
+    background-image:url("../img/m3Mnxgs.webp");
+    color: whitesmoke;
+
+}
+
+.ueberschrift{
+    background-color:black !important;
+    border-style: hidden !important;
+}
+
+
+#Assistent {
+    text-align: center;
+    font-size: x-large;
+    height: 100px;
+    width: 220px;
+    background-image:url("../img/assistent.gif ") ;
+    color: whitesmoke;
+    }
+#start{
+    background-color: black;
+}
+#debugDiv{
+    background-color: black;
+    color: white;
+    border-color: white;
+    margin: 0 auto;
+}
+#console{
+    text-align: center;
+    color:white;
+}

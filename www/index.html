@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="lib/jquery.mobile-1.4.5.min.css" />
+    <script src="lib/jquery-1.11.1.min.js"></script>
+    <script src="lib/jquery.mobile-1.4.5.min.js"></script>
+    <link rel="stylesheet" href="css/assistent.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/faq.css">
+    <link rel="stylesheet" href="css/soundboard.css">
+    <title>Speech Rider</title>
+</head>
+
+<body>
+    <div data-role="page" id="start">
+        <div data-role="header" class="ueberschrift">
+            <div class="container ueberschrift" style="text-align:center;">
+                <img src="img/Knight_Rider.png" alt="headline" class="ueberschrift" height="65" width="200">
+            </div>
+        </div>
+        <div role="main" class="ui-content" id="board-content">
+            <br>
+            <div id="flex" class="container" style="text-align:center;">
+                <button id="Soundboardbutton" class='menuebutton'
+                    onclick="window.location.href='#soundboard'">Soundboard</button>
+                <button id="Assistent" class='menuebutton' onclick="window.location.href='#board'">Assistent</button>
+                <button id="faqbutton" class='menuebutton' onclick="window.location.href='#faq'"
+                        ondblclick="window.location.href='#debugDiv'">FAQ</button>
+                <div class="tri">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div data-role="page" id="soundboard">
+
+        <div role="main" class="ui-content container" id="sound-content">
+            <div id="soundcontent">
+                <a class="ui-btn-left ui-btn ui-icon-arrow-l ui-btn-icon-notext ui-btn-inline  ui-shadow ui-corner-all"
+                    href="#start" data-role="button" role="button"></a>
+                <audio id="buttonsound" src="./media/button.mp3"></audio>
+                <div id="whitecont">
+                    <button class="buttonWh" onclick="vorstellung()">K.I.T.T<br>vorstellung</button>
+                    <button class="buttonWh" onclick="schoenheit()">K.I.T.T und seine <br>Schönheit</button>
+                    <button class="buttonWh" onclick="serial()">AD-227529</button>
+                    <button class="buttonWh" onclick="menschen()">K.I.T.T <br>und<br> Menschen</button>
+                </div>
+                <div id="greencont">
+                    <button class="buttonGr" onclick="tombola()">Tombola</button>
+                    <button class="buttonGr" onclick="rumstehen()">Nicht<br>rumstehen!</button>
+                    <button class="buttonGr" onclick="eingesperrt()">Eingesperrt</button>
+                    <button class="buttonGr" onclick="scanner()">scanner</button>
+                </div>
+                <div id="redcont">
+                    <button class="rtbutton" onclick="ruecksicht()">Rücksicht</button>
+                    <button class="rtbutton" onclick="fliegen()">fliegen</button>
+                    <button class="rtbutton"
+                        onclick="bdmenschen()">Bedürfnisse<br>der<br>Menschen</button>
+                    <button class="rtbutton" onclick="work()">Arbeit</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div data-role="page" id="board">
+        <div role="main" class="ui-content" id="kitt-content">
+            <section id="sound-buttons">
+                <h2 style="display: none;">Diesen Text wird niemand jemals sehen!</h2>
+                <audio id="sound1" src="./media/schoenheit.mp3"></audio>
+                <audio id="sound2" src="./media/vorstellungt.mp3"></audio>
+                <audio id="sound3" src="./media/serial.mp3"></audio>
+                <audio id="sound4" src="./media/menschen.mp3"></audio>
+                <audio id="sound5" src="./media/preis.mp3"></audio>
+                <audio id="sound6" src="./media/stehen.mp3"></audio>
+                <audio id="sound7" src="./media/sperr.mp3"></audio>
+                <audio id="sound8" src="./media/scanner.mp3"></audio>
+                <audio id="sound9" src="./media/rsicht.mp3"></audio>
+                <audio id="sound10" src="./media/flug.mp3"></audio>
+                <audio id="sound11" src="./media/eingehen.mp3"></audio>
+                <audio id="sound12" src="./media/arbeit.mp3"></audio>
+
+                <button class="yellowbutton" onclick="buttonpush()" id="airbutton">AIR</button>
+                <button class="yellowbutton" onclick="buttonpush()" id="oilbutton">OIL</button>
+                <button class="redbutton" onclick="buttonpush()" id="p1">P1</button>
+                <button class="redbutton" onclick="buttonpush()" id="p2">P2</button>
+                <button class="redbutton" onclick="buttonpush()" id="p3">P3</button>
+                <button class="redbutton" onclick="buttonpush()" id="p4">P4</button>
+                <button class="yellowbutton" onclick="buttonpush()" id="s1">S1</button>
+                <button class="yellowbutton" onclick="buttonpush()" id="s2">S2</button>
+
+                <button class="modebutton activated" onclick="buttonpush()" id="autocruise">Auto<br>Cruise</button>
+                <button class="modebutton deactivated" onclick="buttonpush()" id="normal">Normal<br>Cruise</button>
+                <button class="modebutton deactivated" onclick="buttonpush()" id="pursuit">Pursuit</button>
+
+                <a id="backbutton"
+                    class="ui-btn-left ui-btn ui-icon-arrow-l ui-btn-icon-notext ui-btn-inline ui-shadow ui-corner-all"
+                    href="#start" data-role="button" role="button"></a>
+            </section>
+        </div>
+    </div>
+    <div id="debugDiv">
+        <button onclick="window.location.href='#start'">Zurück</button>
+        <button onclick="resetapp()">RESET</button>
+    </div>
+
+    <div data-role="page" id="faq">
+        <div data-role="header" class="ueberschrift">
+            <a class="ui-btn-left ui-btn ui-icon-arrow-l ui-btn-icon-notext ui-btn-inline  ui-shadow ui-corner-all"
+                href="#start" data-role="button" role="button"></a>
+        </div>
+        <div role="main" class="ui-content" id="faq-content">
+
+            <div class="container" style="text-align:center;">
+                <br>
+                <h1>Frequently Asked Questions(FAQ)</h1>
+            </div>
+            <h3>Was machen die Knöpfe im Soundboard?</h3>
+            <p>
+                Wie der Name schon sagt, spielt die App bei jeder Taste, einen bestimmten Sound ab.
+            </p>
+            <h3>Was machen die Tasten im Assistenten?</h3>
+            <p>
+                Diese Buttons haben folgende Funktionen:<br>
+                P1= Wechsel zwischen Light-/Darmode.<br>
+                einfacher Klick auf AIR= Das Wetter der eigenen Stadt wird gesagt.<br>
+                doppelter Klick auf AIR= Die Stadt für das Wetter kann neu eingegeben werden.<br>
+                Normal Mode= Der Sprachassistent wird aktiviert und hört ihnen nun zu.<br>
+                Autocruise= Der Sprachassistent wird deaktiviert und hört ihnen <b style="color: white;">nicht</b> mehr
+                zu.
+            </p>
+            <h3>Sind die Speech Rider Sounds copyright geschützt?</h3>
+            <p>
+                Das Unternehmen respektiert das geistige Eigentum anderer und fordert die Benutzer unserer Website
+                auf, dasselbe zu tun.<br> In
+                Verbindung mit unserer Website haben wir eine Richtlinie verabschiedet und umgesetzt, die das
+                Urheberrecht respektiert
+                sorgt für die Entfernung von rechtsverletzendem Material.
+            </p>
+            <h3>Kann man die Sounds herunterladen?</h3>
+            <p>
+                Nein, die Sounds können nur in der App benutzt werden.
+            </p>
+            <br>
+            <br>
+        </div>
+    </div>
+    <script src="./js/app.js"></script>
+    <script src="./js/buttons.js"></script>
+    <script src="./js/console.js"></script>
+    <script src="./js/sounds.js"></script>
+</body>
+
+</html>

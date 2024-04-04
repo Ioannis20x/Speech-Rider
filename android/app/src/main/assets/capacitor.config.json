@@ -1,0 +1,6 @@
+{
+	"appId": "com.ioannis.rider",
+	"appName": "speech-rider",
+	"webDir": "www",
+	"bundledWebRuntime": false
+}

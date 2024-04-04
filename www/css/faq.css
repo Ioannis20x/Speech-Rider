@@ -1,0 +1,8 @@
+#faq-content{
+    grid-template-columns: 33% 33% 33%;
+    justify-content: center;
+    background-image: url("../img/m3Mnxgs.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: red;
+}

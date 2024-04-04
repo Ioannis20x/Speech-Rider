@@ -1,0 +1,146 @@
+
+#board{
+    background-color: black;
+}
+
+#faq-content{
+    grid-template-columns: 33% 33% 33%;
+    justify-content: center;
+    background-image: url("../img/m3Mnxgs.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: red;
+}
+.tri{
+    width: 0px;
+    height: 0px;
+    border-top: 60px solid blue;
+    text-align: center;
+}
+.yellowbutton{
+    background-color: yellow !important ;
+    color: black !important ;
+    font-weight: bold !important;
+    text-align: center !important ;
+    font-size: 125% !important ;
+    border-radius: 40% !important;
+    height: 50px !important ;
+    width: 100px !important ;
+    margin: 0 auto !important ;
+}
+
+.modebutton {
+    color: black  !important;
+    font-weight: bold  !important;
+    font-size: 200%  !important;
+    height: 105px  !important;
+    width: 300px  !important;
+    text-align: center  !important; 
+    border-color: black;
+}
+
+.redbutton {
+    background-color: red !important;
+    color: black  !important;
+    font-weight: bold  !important;
+    text-align: center  !important;
+    font-size: 125%  !important;
+    border-radius: 40%  !important;
+    height: 50px  !important;
+    width: 100px !important;
+    margin: 0 auto !important;
+    border-color: black !important;
+}
+
+#airbutton {
+    position: absolute !important;
+    left:0px !important;
+}
+
+#p1 {
+    position: absolute !important;
+    top: 250px !important;
+    left:0px !important;
+}
+
+#s1 {
+    position: absolute !important;
+    right: 0px !important;
+}
+
+#p3 {
+    position: absolute !important;
+    top: 250px !important;
+    right: 0px !important;
+}
+
+#p4 {
+    position: absolute !important;
+    right: 0px !important;
+    top: 350px !important;
+}
+
+#s2 {
+    position: absolute !important;
+    top: 100px !important;
+    right: 0px !important;
+}
+
+#p2 {
+    position: absolute !important;
+    top: 325px !important;
+    left:0px !important;
+}
+
+
+#oilbutton {
+    position: absolute !important;
+    top: 100px !important;
+    left:0px !important;
+}
+
+#autocruise{
+    position: absolute !important;
+    background-color: red !important;
+    color:black !important;
+    top: 450px !important;
+    left: 50px !important;
+}
+
+#backbutton{
+    position:absolute;
+    top:825px;
+}
+
+#normal{
+    position: absolute;
+    background-color: yellow;
+    color:black;
+    top: 600px;
+    left: 50px;
+}
+
+#pursuit{
+    position: absolute !important;
+    background-color: rgb(173, 0, 173) !important;
+    color:black !important;
+    top: 750px !important;
+    left: 50px !important;
+}
+
+.deactivated{
+    filter: brightness(50%) !important;
+}
+
+.activated{
+    filter: brightness(100%) !important;
+}
+
+.stopanim{
+    visibility: hidden;
+}
+
+#sprachanim{
+    position: absolute;
+    left: 250px;
+}
